@@ -63,3 +63,7 @@ section { min-height: 80vh; padding: 60px 20px; }
   .hamburger { display: flex; }
 }
 
+.introTitle {
+  font-size: 40px;
+}
+
