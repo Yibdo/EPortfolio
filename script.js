@@ -6,12 +6,13 @@ hamburger.addEventListener('click', () => {
 });
 
   const title = document.querySelector('.dropdown-title');
-  const content = document.querySelector('.dropdown-content');
+const content = document.querySelector('.dropdown-content');
 
-  title.addEventListener('click', () => {
-    content.style.display = content.style.display === 'block' ? 'none' : 'block';
-  });
+title.addEventListener('click', () => {
+  content.classList.toggle('show');
+});
 
 
 
 console.log("Script loaded!");
+
