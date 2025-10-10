@@ -121,3 +121,7 @@ section { min-height: 80vh; padding: 60px 20px; }
   margin-top: 10px;
   line-height: 3;
 }
+.dropdown-content.show {
+  display: block;
+}
+
