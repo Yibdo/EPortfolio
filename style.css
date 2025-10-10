@@ -7,7 +7,7 @@ body { font-family: Arial, sans-serif; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #007bff;
+  background-color: lightblue;
   padding: 10px 20px;
   position: sticky;
   top: 0;
@@ -62,3 +62,4 @@ section { min-height: 80vh; padding: 60px 20px; }
 
   .hamburger { display: flex; }
 }
+
