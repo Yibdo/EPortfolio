@@ -1,3 +1,4 @@
+// Hamburger toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -5,14 +6,15 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-  const title = document.querySelector('.dropdown-title');
-const content = document.querySelector('.dropdown-content');
+// Multiple dropdowns
+const dropdowns = document.querySelectorAll('.dropdown');
 
-title.addEventListener('click', () => {
-  content.classList.toggle('show');
+dropdowns.forEach(dropdown => {
+  const title = dropdown.querySelector('.dropdown-title');
+  const content = dropdown.querySelector('.dropdown-content');
+
+  title.addEventListener('click', () => {
+    content.classList.toggle('show');
+  });
 });
-
-
-
-console.log("Script loaded!");
 
