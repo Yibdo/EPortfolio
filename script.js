@@ -13,3 +13,5 @@ hamburger.addEventListener('click', () => {
   });
 
 
+
+console.log("Script loaded!");
