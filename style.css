@@ -102,6 +102,10 @@ section { min-height: 80vh; padding: 60px 20px; }
     height:fit-content;
 }
 
+.dropdown-format{
+  display:flex;
+  justify-content: space-evenly;
+}
 .dropdown {
   width: 60%;
   margin: 20px auto;
