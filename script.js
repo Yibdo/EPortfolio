@@ -1,15 +1,26 @@
+// Hamburger menu toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
 
-  const title = document.querySelector('.dropdown-title');
-  const content = document.querySelector('.dropdown-content');
+// Dropdown toggle for all dropdown sections
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+  const title = dropdown.querySelector('.dropdown-title');
+  const content = dropdown.querySelector('.dropdown-content');
+
+  // Start with dropdowns hidden (optional, depending on your CSS)
+  content.style.display = 'none';
 
   title.addEventListener('click', () => {
-    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    const isVisible = content.style.display === 'block';
+    content.style.display = isVisible ? 'none' : 'block';
   });
-
+});
 

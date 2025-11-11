@@ -125,6 +125,16 @@ section { min-height: 80vh; padding: 60px 20px; }
   margin-top: 10px;
   line-height: 3;
 }
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.dropdown.active .dropdown-content {
+  max-height: 1000px; /* enough to fit all content */
+}
+
 
 .docs-title {
   margin-top: 2rem;
