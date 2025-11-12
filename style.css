@@ -120,11 +120,7 @@ section { min-height: 80vh; padding: 60px 20px; }
   font-weight: bold;
 }
 
-.dropdown-content {
-  display: none; /* hidden by default */
-  margin-top: 10px;
-  line-height: 3;
-}
+
 .dropdown-content {
   max-height: 0;
   overflow: hidden;

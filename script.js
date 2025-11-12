@@ -8,19 +8,13 @@ if (hamburger && navLinks) {
   });
 }
 
-// Dropdown toggle for all dropdown sections
+// Dropdown toggle (CSS handles animation)
 const dropdowns = document.querySelectorAll('.dropdown');
 
 dropdowns.forEach(dropdown => {
   const title = dropdown.querySelector('.dropdown-title');
-  const content = dropdown.querySelector('.dropdown-content');
-
-  // Start with dropdowns hidden (optional, depending on your CSS)
-  content.style.display = 'none';
-
+  
   title.addEventListener('click', () => {
-    const isVisible = content.style.display === 'block';
-    content.style.display = isVisible ? 'none' : 'block';
+    dropdown.classList.toggle('active');
   });
 });
-
