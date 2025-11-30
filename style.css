@@ -120,12 +120,16 @@ section { min-height: 80vh; padding: 60px 20px; }
   font-weight: bold;
 }
 
+.dropdown-text {
+  text-align: center;
+}
+
+
 
 .dropdown-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
-  text-align: center;
 }
 
 .dropdown.active .dropdown-content {
