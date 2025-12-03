@@ -118,7 +118,7 @@ body {
 .intro-section {
   display: flex;
   justify-content: center;
-  padding: 40px 10px;
+  padding: 20px 10px 60px; /* top 20px, bottom 60px */
 }
 
 .intro-container {
